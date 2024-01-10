@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-import styles from "./MenuNav.module.css"
+import styles from './MenuNav.module.css'
 
 export default function MenuNav() {
   const [menuVisible, setMenuVisible] = useState(false)

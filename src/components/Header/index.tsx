@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import styles from "./Header.module.css"
+import styles from './Header.module.css'
 import React from 'react'
 import MenuNav from './MenuNav'
 import InputSection from './InputSection'
-
 
 export default function Header() {
   return (
@@ -11,7 +10,7 @@ export default function Header() {
       <div className={styles.alignGrid}>
         <figure className="logoContainer">
           <Image
-          className={styles.logo}
+            className={styles.logo}
             src="/images/logoCatus.svg"
             alt="Logo da Empresa"
             width="176"
@@ -19,15 +18,15 @@ export default function Header() {
           />
         </figure>
         <MenuNav />
-        <InputSection/>
+        <InputSection />
         <button className={styles.cartBtn}>
-            <Image
-                src={"/images/cart.svg"}
-                alt="Carrinho de compras."
-                width={20}
-                height={20}
-                layout="responsive"
-            />
+          <Image
+            src={'/images/cart.svg'}
+            alt="Carrinho de compras."
+            width={20}
+            height={20}
+            layout="responsive"
+          />
         </button>
       </div>
     </header>
