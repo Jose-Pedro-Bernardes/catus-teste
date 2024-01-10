@@ -2,6 +2,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    order: 2;
+    margin-right: 50px;
+    width: 36px;
+    height: 34px;
 }
 
 .close_btn{
@@ -26,12 +30,11 @@
     right: 0;
     
     background-color: #0e0e0e;
-    font-size: 14px;
+    font-size: 0.875rem;
     
     transform: translateX(150px);
     transition: transform 0.3s ease-in-out;
-    
-
+    z-index: 1;
 }
 
 .link{
@@ -48,13 +51,13 @@
   transform: translateX(0);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1150px) {
     .menuNav {
         width: auto;
         height: auto;
         position: static;
         background-color: transparent;
-        font-size: 15px;
+        font-size: 0.938rem;
         display: flex;
         transform: translateX(0);
         transition: none;
@@ -62,10 +65,10 @@
         flex-direction: row;
         justify-content: flex-end;
         padding: 0;
+    }
 
-        .close_btn{
-            display: none;
-        }
+    .close_btn{
+        display: none;
     }
 
     .menuNav.show{
