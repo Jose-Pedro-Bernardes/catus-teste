@@ -1,0 +1,88 @@
+.hamburguer_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close_btn{
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menuNav{
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    
+    position:fixed;
+    top: 0;
+    right: 0;
+    
+    background-color: #0e0e0e;
+    font-size: 14px;
+    
+    transform: translateX(150px);
+    transition: transform 0.3s ease-in-out;
+    
+
+}
+
+.link{
+    text-decoration: none;
+    color: var(--light-0);
+    transition: ease 0.2s all;
+}
+
+.link:hover{
+    color: var(--light-3);
+}
+
+.menuNav.show {
+  transform: translateX(0);
+}
+
+@media (min-width: 1000px) {
+    .menuNav {
+        width: auto;
+        height: auto;
+        position: static;
+        background-color: transparent;
+        font-size: 15px;
+        display: flex;
+        transform: translateX(0);
+        transition: none;
+        gap: 26px;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+
+        .close_btn{
+            display: none;
+        }
+    }
+
+    .menuNav.show{
+        padding: 0;
+    }
+
+    .hamburguer_btn {
+        display: none;
+    }
+
+    .link{
+        text-decoration: none;
+        color: var(--grey-0);
+        transition: ease 0.2s all;
+    }
+    
+    .link:hover{
+        color: var(--grey-3);
+    }
+}

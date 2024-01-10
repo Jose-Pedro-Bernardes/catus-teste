@@ -1,0 +1,15 @@
+:root {
+  --background-color: rgba(255, 255, 255, 1);
+  --header-background: rgba(238, 238, 238, 1);
+
+  --main-button-background: rgba(164, 190, 191, 1);
+  --main-button-hover: rgb(88, 171, 173);
+
+  --grey-0: rgba(0, 0, 0, 1);
+  --grey-1: rgba(64, 64, 64, 1);
+  --grey-2: rgba(72, 72, 72, 1);
+  --grey-3: rgb(102, 102, 102);
+
+  --light-0: rgba(255, 255, 255, 1);
+  --light-1: rgba(246, 246, 246, 1);
+}
