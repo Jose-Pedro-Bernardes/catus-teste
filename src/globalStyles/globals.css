@@ -14,3 +14,7 @@
   --light-0: rgba(255, 255, 255, 1);
   --light-1: rgba(246, 246, 246, 1);
 }
+
+body{
+  background-color: rgba(64, 64, 64, 1);
+}

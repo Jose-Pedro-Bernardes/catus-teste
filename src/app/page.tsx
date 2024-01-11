@@ -12,21 +12,19 @@ export default function Home() {
         <div className={styles.mainStripe}>
           <div className={styles.midStripe}></div>
         </div>
-        <div className={styles.overflow__container}>
-          <ul className={styles.productList}>
-            {data.map((product) => (
-              <Card
-                key={product.id}
-                id={product.id}
-                img={product.img}
-                description={product.description}
-                price={product.price}
-                salePrice={product.salePrice}
-                installments={product.installments}
-              />
-            ))}
-          </ul>
-        </div>
+        <ul className={styles.productList}>
+          {data.map((product) => (
+            <Card
+              key={product.id}
+              id={product.id}
+              img={product.img}
+              description={product.description}
+              price={product.price}
+              salePrice={product.salePrice}
+              installments={product.installments}
+            />
+          ))}
+        </ul>
       </section>
     </main>
   )
