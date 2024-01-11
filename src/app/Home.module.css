@@ -90,27 +90,59 @@
 }
 
 @media(max-width: 818px){
-    .lastBannerContainer{
-        display: none;
+    .banners__section{
+        width: 83%;
+        align-items: start;
     }
-    .thirdBanner{
-        width: 600px;
-        height: 100%;
+
+    .lastBannerContainer{
         max-width: 100%;
     }
 
-    .banners__section{
-        width: 100%;
-        align-items: start;
-    }
     .thirdBannerContainer{
+        max-width: 100%;
         display: flex;
         justify-content: start;
+    }
+
+    .thirdBanner, .fourthBanner, .fifthBanner{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 728px){
+    .thirdBannerContainer{
+        display: none;
+    }
+
+    .lastBannerContainer{
+        width: 100%;
+    }
+
+    .fourthBanner, .fifthBanner{
+        max-height: 100%;
+    }
+    .fifthBanner{
+        display: flex;
+        align-self: flex-end;
     }
 }
 
 @media(max-width: 600px){
     .main__container{
         margin-top: 10px;
+    }
+}
+
+@media(max-width: 459px){
+    .lastBannerContainer{
+        width: 100%;
+        justify-content: start;
+        gap: 10px;
+        height: auto;
+    }
+    .fourthBanner, .fifthBanner{
+        height: 190px;
+        width: 280px;
     }
 }
