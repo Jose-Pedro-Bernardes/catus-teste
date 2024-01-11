@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './Home.module.css'
+import Card from '@/components/Card'
+import { data } from '@/database/data'
 
 export default function Home() {
   return (
@@ -52,9 +54,21 @@ export default function Home() {
         <div className={styles.mainStripe}>
           <div className={styles.midStripe}></div>
         </div>
-        <ul className={styles.productList}>
-          <li className={styles.productCard}></li>
-        </ul>
+        <div className={styles.overflow__container}>
+          <ul className={styles.productList}>
+            {data.map((product) => (
+              <Card
+                key={product.id}
+                id={product.id}
+                img={product.img}
+                description={product.description}
+                price={product.price}
+                salePrice={product.salePrice}
+                installments={product.installments}
+              />
+            ))}
+          </ul>
+        </div>
       </section>
     </main>
   )
