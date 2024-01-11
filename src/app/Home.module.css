@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 28px;
     gap: 65px;
+    margin-bottom: 200px;
 }
 
 .banners__section{
@@ -49,14 +50,38 @@
     background-color: #CFCFCF;
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .midStripe{
+    max-width: 100%;
     width: 200px;
     height: 3px;
     background-color: #A4BEBF;
 }
 
+.overflow__container {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.productList {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+@media(max-width:1450px){
+    .productList{
+        justify-content: start;
+    }
+}
 
 @media(max-width: 1220px){
     .firstBannerContainer{
