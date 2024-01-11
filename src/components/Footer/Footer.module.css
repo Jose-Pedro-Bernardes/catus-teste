@@ -1,0 +1,109 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 46px 0px;
+    background-color: var(--grey-1);
+}
+
+.alignFooter{
+    width: 1200px;
+    max-width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alignSection{
+    display: flex;
+    gap: 136px;
+}
+
+.footerTitle{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.stripeHeader{
+    width: 275px;
+    height: 1px;
+    background-color: rgba(207, 207, 207, 1);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.stripeComplement{
+    width: 100px;
+    height: 2px;
+    background-color:rgba(50, 188, 173, 1);
+}
+
+.navigate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.linkNavFooter{
+    text-decoration: none;
+    color: var(--light-1);
+}
+
+.linkNavFooter:hover{
+    color: rgb(73, 73, 252);
+}
+
+.whatsapp{
+    color: var(--light-0);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hourContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hourTitle{
+    color: var(--light-0);
+    font-weight: 700;
+}
+.hour{
+    color: var(--light-0);
+}
+
+.sealContainer{
+    display: flex;
+    gap: 16px;
+}
+
+@media(max-width: 1450px){
+    .alignSection{
+        gap: 90px;
+    }
+}
+
+@media(max-width: 1270px){
+    .alignSection{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media(max-width: 800px){
+    .alignFooter{
+        flex-direction: column;
+        justify-content: start;
+        gap: 70px;
+    }
+    .sealContainer{
+        flex-direction: column;
+    }
+    .imgFooter{
+        max-width: 100%;
+    }
+}
