@@ -21,7 +21,7 @@ export default function Header() {
         <InputSection />
         <button className={styles.cartBtn}>
           <Image
-            src={'/images/icons/cart.svg'}
+            src="/images/vector/cart.svg"
             alt="Carrinho de compras."
             width={20}
             height={20}
