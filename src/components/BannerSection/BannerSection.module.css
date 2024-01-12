@@ -1,79 +1,10 @@
-.banners__section{
-    width: 83%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 29.25px;
-}
+.bannerSection{
+    background-image: url("/images/mosaic/Mosaic.svg");
+    background-size: cover;
+    background-position: center;
 
-.firstBannerContainer{
+    width: 1200px;
     height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 100%;
 }
 
-.lastBannerContainer{
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@media(max-width: 1220px){
-    .firstBannerContainer{
-        display: none;
-    }
-}
-
-@media(max-width: 818px){
-    .banners__section{
-        width: 83%;
-        align-items: start;
-    }
-
-    .lastBannerContainer{
-        max-width: 100%;
-    }
-
-    .thirdBannerContainer{
-        max-width: 100%;
-        display: flex;
-        justify-content: start;
-    }
-
-    .thirdBanner, .fourthBanner, .fifthBanner{
-        max-width: 100%;
-    }
-}
-
-@media(max-width: 728px){
-    .thirdBannerContainer{
-        display: none;
-    }
-
-    .lastBannerContainer{
-        width: 100%;
-    }
-
-    .fourthBanner, .fifthBanner{
-        max-height: 100%;
-    }
-    .fifthBanner{
-        display: flex;
-        align-self: flex-end;
-    }
-}
-
-@media(max-width: 459px){
-    .lastBannerContainer{
-        width: 100%;
-        justify-content: start;
-        gap: 10px;
-        height: auto;
-    }
-    .fourthBanner, .fifthBanner{
-        height: 190px;
-        width: 280px;
-    }
-}
