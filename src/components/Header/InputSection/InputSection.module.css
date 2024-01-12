@@ -2,10 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 80px;
+    position: absolute;
+    top: 90px;
 }
+
 .searchInput{
-    width: 242px;
+    width: 200px;
+    font-size: 0.75rem;
     height: 32px;
     background-color: transparent;
     outline: none;
@@ -13,35 +16,36 @@
     border-bottom: 1px solid var(--grey-0) ;
     color: var(--grey-4);
     padding-left: 3px;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
 .buttonSearch{
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-@media(max-width: 800px){
+@media(min-width: 800px){
     .inputSearch__container{
-        position: absolute;
-        top: 90px;
+        position: static;
+        margin-right: 0;
     }
 
     .buttonSearch{
-        width: 40px;
-        height: 40px;
-        margin-top: 5px;
+        width: auto;
+        height: auto;
     }
 
     .searchInput{
-        font-size: 0.75rem;
-        width: 200px;
+        width: 242px;
+        font-size: 0.875rem;
     }
 }
 
-@media(max-width: 1150px){
+@media(min-width: 1150px){
     .inputSearch__container{
-        margin-right: 0;
+        margin-right: 80px;
     }
 }

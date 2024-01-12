@@ -18,7 +18,7 @@
 }
 
 .title{
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -50,29 +50,26 @@
 .productList {
     max-width: 83%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     row-gap: 50px;
     padding-bottom: 10px;
     padding-top: 10px;
     justify-content: center;
 }
-  
 
-@media(max-width:1250px){
+@media(min-width: 850px){
     .productList {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media(max-width: 850px){
-    .title{
-        font-size: 1.25rem;
-    }
+@media(min-width: 1250px){
     .productList{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
+
 
 
 

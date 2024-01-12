@@ -10,12 +10,15 @@
     width: 1200px;
     max-width: 83%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    gap: 70px;
 }
 
 .alignSection{
     display: flex;
-    gap: 136px;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .footerTitle{
@@ -78,32 +81,35 @@
 
 .sealContainer{
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
-@media(max-width: 1450px){
+.imgFooter{
+    max-width: 100%;
+}
+
+@media(min-width: 800px){
+    .sealContainer{
+        flex-direction: row;
+    }
+
+    .alignFooter{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+}
+
+@media(min-width: 1270px){
     .alignSection{
         gap: 90px;
+        flex-direction: row;
     }
 }
 
-@media(max-width: 1270px){
+@media(min-width: 1450px){
     .alignSection{
-        flex-direction: column;
-        gap: 50px;
-    }
-}
-
-@media(max-width: 800px){
-    .alignFooter{
-        flex-direction: column;
-        justify-content: start;
-        gap: 70px;
-    }
-    .sealContainer{
-        flex-direction: column;
-    }
-    .imgFooter{
-        max-width: 100%;
+        gap: 136px;
     }
 }
