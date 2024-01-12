@@ -40,14 +40,14 @@ export default function Footer() {
             <figure className={styles.sealContainer}>
               <Image
                 className={styles.imgFooter}
-                src="/images/seloGoogle.svg"
+                src="/images/seals/seloGoogle.svg"
                 alt="Selo do google"
                 width={146.03}
                 height={37}
               />
               <Image
                 className={styles.imgFooter}
-                src="/images/seloLojaProtegida.svg"
+                src="/images/seals/seloLojaProtegida.svg"
                 alt="Loja protegida"
                 width={130}
                 height={38}
@@ -62,7 +62,7 @@ export default function Footer() {
             <figure>
               <Image
                 className={styles.imgFooter}
-                src="/images/formasDePagamento.svg"
+                src="/images/seals/formasDePagamento.svg"
                 alt="formas de pagamento"
                 width={338}
                 height={32}

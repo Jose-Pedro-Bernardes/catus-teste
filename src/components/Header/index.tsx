@@ -11,7 +11,7 @@ export default function Header() {
         <figure className="logoContainer">
           <Image
             className={styles.logo}
-            src="/images/logoCatus.svg"
+            src="/images/seals/logoCatus.svg"
             alt="Logo da Empresa"
             width="176"
             height="54"
@@ -21,7 +21,7 @@ export default function Header() {
         <InputSection />
         <button className={styles.cartBtn}>
           <Image
-            src={'/images/cart.svg'}
+            src={'/images/icons/cart.svg'}
             alt="Carrinho de compras."
             width={20}
             height={20}
