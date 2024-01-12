@@ -28,6 +28,7 @@ const Card: React.FC<IProps> = ({
           alt={`Imagem do produto ${id}`}
           width={260}
           height="260"
+          layout="responsive"
         />
       </figure>
       <p className={styles.description}>{description}</p>

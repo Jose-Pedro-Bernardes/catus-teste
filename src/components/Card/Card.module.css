@@ -55,3 +55,52 @@
     background-color: var(--main-button-hover);
 }
 
+@media(max-width: 850px){
+    .card{
+        max-width: 100%;
+    }
+    .description{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 0.875rem;
+        width: 100%;
+    }
+    
+    .fullPrice{
+        font-size: 0.75rem;
+        text-decoration: line-through;
+        color: var(--grey-2);
+        margin-bottom: 10px;
+    }
+    
+    .actualPrice{
+        font-size: 1.25rem;
+        color: var(--grey-2);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .installments{
+        font-size: 0.875rem;
+        margin-bottom: 30px;
+    }
+    
+    .btnAddToCart{
+        height: 50px;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+}
+
+@media(max-width: 580px){
+    .card{
+        width: 170px;
+        gap: 0px;
+    }
+}
+
+@media(max-width: 400px){
+    .card{
+        width: 150px;
+    }
+}
