@@ -1,4 +1,4 @@
-.hamburguer_btn{
+.hamburguerBtn{
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -8,7 +8,7 @@
     height: 34px;
 }
 
-.close_btn{
+.closeBtn{
     color: white;
     background-color: transparent;
     border: none;
@@ -67,7 +67,7 @@
         padding: 0;
     }
 
-    .close_btn{
+    .closeBtn{
         display: none;
     }
 
@@ -75,7 +75,7 @@
         padding: 0;
     }
 
-    .hamburguer_btn {
+    .hamburguerBtn {
         display: none;
     }
 

@@ -1,4 +1,4 @@
-.inputSearch__container{
+.inputSearchContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 
 @media(min-width: 800px){
-    .inputSearch__container{
+    .inputSearchContainer{
         position: static;
         margin-right: 0;
     }
@@ -45,7 +45,7 @@
 }
 
 @media(min-width: 1150px){
-    .inputSearch__container{
+    .inputSearchContainer{
         margin-right: 80px;
     }
 }

@@ -12,7 +12,7 @@ export default function MenuNav() {
 
   return (
     <>
-      <button className={styles.hamburguer_btn} onClick={toggleMenu}>
+      <button className={styles.hamburguerBtn} onClick={toggleMenu}>
         <Image
           src="/images/vector/menu.svg"
           alt="Botão para abrir o menu de navegação do site."
@@ -21,7 +21,7 @@ export default function MenuNav() {
         />
       </button>
       <nav className={`${styles.menuNav} ${menuVisible ? styles.show : ''}`}>
-        <button className={styles.close_btn} onClick={toggleMenu}>
+        <button className={styles.closeBtn} onClick={toggleMenu}>
           X
         </button>
         <a

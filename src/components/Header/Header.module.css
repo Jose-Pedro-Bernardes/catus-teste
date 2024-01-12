@@ -1,4 +1,4 @@
-.header__container {
+.headerContainer {
     height: 200px;
     box-sizing: border-box;
     padding-top: 40px;
@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.logoContainer{
+    max-width: 100%;
+}
+
 .cartBtn {
     background-color: transparent;
     border: none;
@@ -29,7 +33,7 @@
 }
 
 @media (min-width: 800px) {
-    .header__container {
+    .headerContainer {
         height: 94px;
         align-items: center;
         padding-top: 0;

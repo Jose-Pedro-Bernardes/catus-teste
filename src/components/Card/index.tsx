@@ -21,7 +21,7 @@ const Card: React.FC<IProps> = ({
 }) => {
   return (
     <li className={styles.card}>
-      <figure className={styles.image__container}>
+      <figure className={styles.imageContainer}>
         <Image
           className={styles.imgCard}
           src={img}

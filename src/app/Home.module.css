@@ -1,4 +1,4 @@
-.main__container{
+.mainContainer{
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -10,7 +10,7 @@
     background-color: #fff;
 }
 
-.products__section{
+.productsSection{
     width: 83%;
     display: flex;
     flex-direction: column;
@@ -38,13 +38,6 @@
     width: 200px;
     height: 3px;
     background-color: #A4BEBF;
-}
-
-.overflow__container {
-    width: 100%;
-    max-width: 1200px;
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .productList {

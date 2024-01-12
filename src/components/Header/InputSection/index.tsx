@@ -4,7 +4,7 @@ import styles from './InputSection.module.css'
 
 export default function InputSection() {
   return (
-    <form className={styles.inputSearch__container}>
+    <form className={styles.inputSearchContainer}>
       <input
         className={styles.searchInput}
         type="text"

@@ -12,7 +12,7 @@ export default function Footer() {
           <div className={styles.stripeHeader}>
             <div className={styles.stripeComplement}></div>
           </div>
-          <nav className={styles.navigate}>
+          <nav className={styles.navigateContainer}>
             <Link className={styles.linkNavFooter} href="#">
               Ajuda e suporte
             </Link>

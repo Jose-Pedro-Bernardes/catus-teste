@@ -6,9 +6,9 @@ import InputSection from './InputSection'
 
 export default function Header() {
   return (
-    <header className={styles.header__container}>
+    <header className={styles.headerContainer}>
       <div className={styles.alignGrid}>
-        <figure className="logoContainer">
+        <figure className={styles.logoContainer}>
           <Image
             className={styles.logo}
             src="/images/seals/logoCatus.svg"
